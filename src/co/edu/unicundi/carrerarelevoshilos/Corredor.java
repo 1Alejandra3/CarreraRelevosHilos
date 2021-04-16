@@ -120,9 +120,9 @@ public class Corredor extends Thread {
 
         if(avance==1){
             equipo.setPosicion1(equipo.getPosicion1()+correr);
-            equipo1=equipo.mostrar();
-            equipo2=equipo.mostrar();
-            equipo3=equipo.mostrar();
+            equipo1=equipo.mostrarE1();
+            equipo2=equipo.mostrarE2();
+            equipo3=equipo.mostrarE3();
             if(equipo1!=null){
                 System.out.println(equipo1);
             }
@@ -136,9 +136,9 @@ public class Corredor extends Thread {
         }
         if(avance==2){
             equipo.setPosicion2(equipo.getPosicion2()+correr);
-            equipo1=equipo.mostrar();
-            equipo2=equipo.mostrar();
-            equipo3=equipo.mostrar();
+            equipo1=equipo.mostrarE1();
+            equipo2=equipo.mostrarE2();
+            equipo3=equipo.mostrarE3();
             if(equipo1!=null){
                 System.out.println(equipo1);
             }
@@ -152,9 +152,9 @@ public class Corredor extends Thread {
         }
         if(avance==3){
             equipo.setPosicion3(equipo.getPosicion3()+correr);
-            equipo1=equipo.mostrar();
-            equipo2=equipo.mostrar();
-            equipo3=equipo.mostrar();
+            equipo1=equipo.mostrarE1();
+            equipo2=equipo.mostrarE2();
+            equipo3=equipo.mostrarE3();
             if(equipo1!=null){
                 System.out.println(equipo1);
             }

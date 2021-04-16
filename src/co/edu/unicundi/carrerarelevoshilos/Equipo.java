@@ -39,7 +39,7 @@ public class Equipo {
      * metodo que contiene los colores y las variables que se muestra
      * @return 
      */
-    public synchronized String mostrar() {
+    public synchronized String mostrarE1() {
       
         String pista = ANSI_BLACK + getEquipo() + " ";
         
@@ -47,7 +47,43 @@ public class Equipo {
             if (i == posicion1) {
                 pista += ANSI_RED + "□";
             } else if (i == posicion2) {
-                pista += ANSI_BLUE + "⃝ ";
+                pista += ANSI_RED + "□";
+            } else if (i == posicion3) {
+                pista += ANSI_RED + "□";
+            } else {
+                pista += "_";
+            } 
+        }
+        return pista;
+    }
+    
+    public synchronized String mostrarE2() {
+      
+        String pista = ANSI_BLACK + getEquipo() + " ";
+        
+        for (int i = getInicial(); i <= getFin(); i++) {
+            if (i == posicion1) {
+                pista += ANSI_BLUE + "O";
+            } else if (i == posicion2) {
+                pista += ANSI_BLUE + "O";
+            } else if (i == posicion3) {
+                pista += ANSI_BLUE + "O";
+            } else {
+                pista += "_";
+            } 
+        }
+        return pista;
+    }
+    
+    public synchronized String mostrarE3() {
+      
+        String pista = ANSI_BLACK + getEquipo() + " ";
+        
+        for (int i = getInicial(); i <= getFin(); i++) {
+            if (i == posicion1) {
+                pista += ANSI_GREEN + "∆";
+            } else if (i == posicion2) {
+                pista += ANSI_GREEN + "∆";
             } else if (i == posicion3) {
                 pista += ANSI_GREEN + "∆";
             } else {
